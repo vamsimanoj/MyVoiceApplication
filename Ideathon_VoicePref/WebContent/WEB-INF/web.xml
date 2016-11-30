@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Ideathon_VoicePref</display-name>
+  <welcome-file-list>
+    <welcome-file>DialIn.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>FormServlet</display-name>
+    <servlet-name>FormServlet</servlet-name>
+    <servlet-class>com.idea.voice.servlets.FormServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FormServlet</servlet-name>
+    <url-pattern>/FormServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PhoneCallServlet</display-name>
+    <servlet-name>PhoneCallServlet</servlet-name>
+    <servlet-class>com.idea.voice.servlets.PhoneCallServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PhoneCallServlet</servlet-name>
+    <url-pattern>/PhoneCallServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
